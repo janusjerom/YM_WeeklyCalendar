@@ -19,13 +19,13 @@ export default function ComponentCal() {
             },
             editable: true
     }
-    
+
 
     const eventService = new EventService();
 
     useEffect(() => {
         eventService.getEvents().then(data => setEvents({events: data}));
-    }, [setEvents])
+    }, [])
 
     // constructor(props) {
     //     super(props);
@@ -51,7 +51,7 @@ export default function ComponentCal() {
     // componentDidMount() {
     //     this.eventService.getEvents().then(data => this.setState({events: data}));
     // }
-
+    //this is converted to functional components
 
     return (
         <div>
