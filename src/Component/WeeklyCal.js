@@ -19,6 +19,7 @@ export default function ComponentCal() {
             },
             editable: true
     }
+    
 
     const eventService = new EventService();
 
